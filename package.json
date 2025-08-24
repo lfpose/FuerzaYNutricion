@@ -1,0 +1,26 @@
+{
+  "name": "FuerzaYNutricion",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "cal.com"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "cal:dev": "turbo run dev --filter=calcom-monorepo",
+    "cal:build": "turbo run build --filter=calcom-monorepo",
+    "cal:db-migrate": "turbo run db-migrate --filter=calcom-monorepo",
+    "cal:db-seed": "turbo run db-seed --filter=calcom-monorepo"
+  },
+  "repository": "https://github.com/lfpose/FuerzaYNutricion",
+  "author": "Lucas Pose <posemerani@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^2.5.6"
+  }
+}
