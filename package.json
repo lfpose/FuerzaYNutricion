@@ -6,17 +6,17 @@
     "cal.com"
   ],
   "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build",
-    "test": "turbo run test",
-    "lint": "turbo run lint",
-    "type-check": "turbo run type-check",
-    "clean": "turbo run clean",
-    "cal:dev": "turbo run dev --filter=calcom-monorepo",
-    "cal:build": "turbo run build --filter=calcom-monorepo",
-    "cal:db-migrate": "turbo run db-migrate --filter=calcom-monorepo",
-    "cal:db-seed": "turbo run db-seed --filter=calcom-monorepo"
+    "dev": "yarn cal:dev",
+    "build": "yarn cal:build",
+    "test": "yarn cal:test", 
+    "cal:dev": "cd cal.com && yarn dev",
+    "cal:build": "cd cal.com && yarn build",
+    "cal:test": "cd cal.com && yarn test",
+    "cal:dx": "cd cal.com && yarn dx",
+    "cal:db-migrate": "cd cal.com && yarn workspace @calcom/prisma db-migrate",
+    "cal:db-seed": "cd cal.com && yarn db-seed"
   },
+  "packageManager": "yarn@1.22.22",
   "repository": "https://github.com/lfpose/FuerzaYNutricion",
   "author": "Lucas Pose <posemerani@gmail.com>",
   "license": "MIT",
